@@ -54,7 +54,7 @@ bridge_ports eth0 wlan0
 ```    
 
 ## Bridge static ip options
-To set a static ip for br0, keep 'interfaces' as above and then you can use the method above for NAT "static ip" with /etc/dhcpcd.conf for br0
+To set a static ip for br0, keep 'interfaces' as above and add a stanza "static ip" with /etc/dhcpcd.conf for br0(see NAT version)
 or
 Add the static br0 information to the interfaces file directly as below.
 
