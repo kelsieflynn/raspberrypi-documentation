@@ -1,4 +1,4 @@
-# Setting up a Raspberry Pi as an access point in a standalone network (NAT)
+# Setting up a Raspberry Pi as an access point in a standalone network using (NAT)
 
 The Raspberry Pi can be used as a wireless access point, running a standalone network. This can be done using the inbuilt wireless features of the Raspberry Pi 3 or Raspberry Pi Zero W, or by using a suitable USB wireless dongle that supports access points. 
 
