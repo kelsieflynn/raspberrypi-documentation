@@ -426,3 +426,7 @@ ctrl_interface=/var/run/hostapd
 ctrl_interface_group=0
 ````
 
+
+
+
+*Note in bridge mode you can have a external dhcpd server provide your addresses as needed or have it on the same server.
