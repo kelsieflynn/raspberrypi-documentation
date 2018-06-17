@@ -83,6 +83,9 @@ iface br0 inet static
 The access point setup for bridging is similar to NAT. Except in this version I have included options for "n" use with 20/40  MHZ. Follow the instructions above to set up the `hostapd.conf` file, but add `bridge=br0` below the `interface=wlan0` line, and remove or comment out the driver line. The passphrase must be between 8 and 64 characters long. 
 
 ```
+ctrl_interface=/var/run/hostapd
+ctrl_interface_group=0
+
 interface=wlan0
 bridge=br0
 #driver=nl80211
