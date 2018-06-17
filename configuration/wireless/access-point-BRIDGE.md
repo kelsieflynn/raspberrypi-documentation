@@ -4,9 +4,10 @@
 
 One common use of the Raspberry Pi as an access point is to provide wireless connections to a wired Ethernet connection, so that anyone logged into the access point can access the internet, providing of course that the wired Ethernet on the Pi can connect to the internet via some sort of router.
 
+The Raspberry Pi can be used as a private wireless access point as well, running a standalone network. See here: [access-point-NAT.md] https://github.com/kelsieflynn/raspberrypi-documentation/blob/master/configuration/wireless/access-point-NAT.md
+*Note: A private access point can be made in bridging mode too, but requires more configuration not covered here.
 
-The Raspberry Pi can be used as a wireless access point, running a standalone network. See here: [access-point-NAT.md] https://github.com/kelsieflynn/raspberrypi-documentation/blob/master/configuration/wireless/access-point-NAT.md
-
+##Using Bridging mode
 To do this, a 'bridge' needs to put in place between the wireless device and the Ethernet device on the access point Raspberry Pi. This bridge will pass all traffic between the two interfaces. Install the following packages to enable the access point setup and bridging.
 
 ```
