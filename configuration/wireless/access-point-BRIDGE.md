@@ -1,6 +1,6 @@
 
 <a name="internet-sharing"></a>
-# Setting up a Raspberry Pi as an access point using bridge mode.(Unofficial)
+# Setting up a Raspberry Pi as an access point using bridge mode. (Unofficial)
 
 One common use of the Raspberry Pi as an access point is to provide wireless connections to a wired Ethernet connection, so that anyone logged into the access point can access the internet, providing of course that the wired Ethernet on the Pi can connect to the internet via some sort of router.
 
