@@ -147,7 +147,22 @@ brctl show
 
 ````
 
-If it does not , try restarting hostapd manually and look for process
+Once hostapd is up and you see both interfaces in brctl show. Do a test connect with a client and
+then check the following command on the pi WAP.
+
+````
+hostapd_cli all_sta
+
+````
+
+
+
+# If it works for you at this point, your done. Go to very bottom of this page and read notes.
+
+
+
+
+If it does not work, try restarting hostapd manually and look for process
 ````
 systemctl restart hostapd
 ````
