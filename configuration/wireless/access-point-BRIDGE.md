@@ -305,7 +305,7 @@ hostapd_cli all_sta
 
 ````
 
-You should see information about your client.
+You should see information about your client(s).
 If you get an error such as:
 "Failed to connect to hostapd - wpa_ctrl_open:..."
 
