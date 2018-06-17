@@ -22,6 +22,7 @@ Since the configuration files are not ready yet, turn the new software off as fo
 sudo systemctl stop hostapd
 ```
 
+## Initial bridging configuration for ethernet
 Bridging creates a higher-level construct over the two ports being bridged. It is the bridge that is the network device, so we need to stop the `eth0` and `wlan0` ports being allocated IP addresses by the DHCP client on the Raspberry Pi.
 
 ```
@@ -42,7 +43,7 @@ Connect the network ports. In this case, connect `eth0` to the bridge `br0`.
 ```
 sudo brctl addif br0 eth0
 ```
-
+WARNING!
 *Do not attempt add wlan0 manually, that was the 'old way', in the 'new way' the wlan0 interface is added dynamically when hostapd starts
 
 
