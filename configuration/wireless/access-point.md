@@ -430,4 +430,4 @@ ctrl_interface_group=0
 
 
 *Note in bridge mode you can have a external dhcpd server provide your addresses as needed or have it on the same server.
-*Also note in bridge mode, the bridge is transparent to clients and clients can seach other across interfaces, unless configured not to, manually.
+*Also note in bridge mode, the bridge is transparent to clients and clients can seach other across interfaces both wired and wireless, unless configured "not to", manually.
