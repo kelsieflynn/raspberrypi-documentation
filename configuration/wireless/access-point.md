@@ -216,7 +216,7 @@ iface br0 inet static
 ```    
 
 
-
+## hostapd configuration options with wireless 'N' and 20/40Mhz
 The access point setup is similar to  that shown in the previous section. Except it has options for "n" use with 20/40  MHZ. Follow the instructions above to set up the `hostapd.conf` file, but add `bridge=br0` below the `interface=wlan0` line, and remove or comment out the driver line. The passphrase must be between 8 and 64 characters long. 
 
 ```
@@ -247,6 +247,8 @@ ht_capab=[HT40+][SHORT-GI-40][DSSS_CCK-40]
 ```
 
 
+## Daemon checks
+
 Make sure hostapd is configured properly.
 
 ```
@@ -259,20 +261,23 @@ Find the line with #DAEMON_CONF, and replace it with this:
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```
 
-Enable hostapd
+## Enable hostapd
 
 ```
 sudo systemctl enable hostapd
 
 ```
 
-Now reboot the Raspberry Pi.
+## Now reboot the Raspberry Pi.
 
 There should now be a functioning bridge between the wireless LAN and the Ethernet connection on the Raspberry Pi, and any device associated with the Raspberry Pi access point will act as if it is connected to the access point's wired Ethernet.
 
 The `ifconfig` command will show the bridge, which will have been allocated an IP address via the wired Ethernet's DHCP server. The `wlan0` and `eth0` no longer have IP addresses, as they are now controlled by the bridge. It is possible to use a static IP address for the bridge if required, but generally, if the Raspberry Pi access point is connected to a ADSL router, the DHCP address will be fine.
 
 
+
+
+## Bridge/hostapd final Checks 
 Check your bridge status and make sure it shows both eth0 and wlan0
 ````
 brctl show 
@@ -321,6 +326,9 @@ Then go to another terminal and check your bridge again.
 brctl show
 
 ````
+
+
+## sysv Daemon workarounds
 
 *If it works this way but not automatically.
     Make sure /etc/init.d/hostapd is executable
