@@ -216,7 +216,7 @@ iface br0 inet static
 
 
 
-The access point setup is almost the same as that shown in the previous section. Follow the instructions above to set up the `hostapd.conf` file, but add `bridge=br0` below the `interface=wlan0` line, and remove or comment out the driver line. The passphrase must be between 8 and 64 characters long. 
+The access point setup is similar to  that shown in the previous section. Except it has options for "n" use with 20/40  MHZ. Follow the instructions above to set up the `hostapd.conf` file, but add `bridge=br0` below the `interface=wlan0` line, and remove or comment out the driver line. The passphrase must be between 8 and 64 characters long. 
 
 ```
 interface=wlan0
