@@ -278,7 +278,7 @@ brctl show
 
 ````
 
-If it does not , try restarting hostapd manaul and look for process
+If it does not , try restarting hostapd manually and look for process
 ````
 systemctl restart hostapd
 ````
@@ -313,6 +313,7 @@ If you still can not get wlan0 on the bridge, just try to start it manually to p
 hostapd /etc/hostapd/hostapd.conf
 
 ````
+
 Then go to another terminal and check your bridge again.
 
 ````
@@ -338,14 +339,14 @@ update-rc.d hostapd remove
 ````
 
  
- 
- 
  Move /etc/init.d/hostapd out to new location, mark not executable and rename such as /root/hostapd.debian9u1.sysv.version
 
 ````
 mv /etc/init.d/hostapd /root/hostapd.debian9u1.sysv.version
 chmod -x /root/hostapd.debian9u1.sysv.version
 ````
+
+#New systemd service for hostapd
 
 Then install a new file in /etc/systemd/system/hostapd.service
 
