@@ -75,6 +75,12 @@ sudo nano /etc/hostapd/hostapd.conf
 Add the information below to the configuration file. This configuration assumes we are using channel 7, with a network name of NameOfNetwork, and a password AardvarkBadgerHedgehog. Note that the name and password should **not** have quotes around them. The passphrase should be between 8 and 64 characters in length.
 
 ```
+ctrl_interface=/var/run/hostapd
+ctrl_interface_group=0
+
+
+
+
 interface=wlan0
 driver=nl80211
 ssid=NameOfNetwork
@@ -142,3 +148,25 @@ ssh pi@192.168.4.1
 ```
 
 By this point, the Raspberry Pi is acting as an access point, and other devices can associate with it. Associated devices can access the Raspberry Pi access point via its IP address for operations such as `rsync`, `scp`, or `ssh`.
+
+
+Check your WAP
+
+````
+hostapd_cli all_sta
+````
+
+You should see information about your client. If you get an error such as: "Failed to connect to hostapd - wpa_ctrl_open:..."
+
+Check/Add and or make sure you have the following at the top of /etc/hostapd/hostapd.conf
+````
+ctrl_interface=/var/run/hostapd
+ctrl_interface_group=0
+````
+
+
+
+
+
+
+
