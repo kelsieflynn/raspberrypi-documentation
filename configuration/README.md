@@ -10,9 +10,9 @@ Some basic guides to configuring your Raspberry Pi.
     - The Raspberry Pi configuration file
 - [Wireless](wireless/README.md)
     - Configuring your Pi to connect to a wireless network using the Raspberry Pi 3 and Pi Zero W's inbuilt wireless connectivity, or a USB wireless dongle
-- [Wireless Access Point NAT Type](wireless/access-point-NAT.md)
+- [Wireless Access Point: NAT Type](wireless/access-point-NAT.md)
     - Configuring your Pi as a wireless access point using the Raspberry Pi 3 and Pi Zero W's inbuilt wireless connectivity, or a USB wireless dongle using Network Address Translation.
-- [Wireless Access Point BRIDGE Type](wireless/access-point-BRIDGE.md)
+- [Wireless Access Point: BRIDGE Type](wireless/access-point-BRIDGE.md)
     - Configuring your Pi as a wireless access point using the Raspberry Pi 3 and Pi Zero W's inbuilt wireless connectivity, or a USB wireless dongle using transparent bridging.
 - [Audio Config](audio-config.md)
     - Switch your audio output between HDMI and the 3.5mm jack
