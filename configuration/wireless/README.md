@@ -1,4 +1,4 @@
-# Wireless connectivity
+# Wireless connectivity(Unofficial Version)
 
 The following documentation is available:
 
