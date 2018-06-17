@@ -156,7 +156,7 @@ Check your WAP
 hostapd_cli all_sta
 ````
 
-You should see information about your client. If you get an error such as: "Failed to connect to hostapd - wpa_ctrl_open:..."
+You should see information about your client(S). If you get an error such as: "Failed to connect to hostapd - wpa_ctrl_open:..."
 
 Check/Add and or make sure you have the following at the top of /etc/hostapd/hostapd.conf
 ````
