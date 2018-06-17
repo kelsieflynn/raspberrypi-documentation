@@ -197,6 +197,7 @@ bridge_ports eth0 wlan0
 
 ```    
 
+## Bridge static ip options
 To set a static ip for br0, keep 'interfaces' as above and then you can use the method above for NAT "static ip" with /etc/dhcpcd.conf for br0
 or
 Add the static br0 information to the interfaces file directly as below.
@@ -400,7 +401,8 @@ Jun 17 00:44:35 raspberrypi systemd[1]: Started Hostapd IEEE 802.11 AP, IEEE 802
 
 `````
 
-Check your bridge
+
+## Check your bridge
 ````
 brctl show 
 ````
