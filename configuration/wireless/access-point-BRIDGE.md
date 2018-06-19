@@ -214,7 +214,7 @@ brctl show
 *If it works this way but not automatically.
     Make sure /etc/init.d/hostapd is executable
     
-Force multiple restarts, sometimes until the first connection a multiple restart resolves a bug that prevents initial startup. 
+Force multiple restarts, sometimes a multiple restart will get it going. 
 
 *I discovered this after I gave up once and ditched the /etc/init.d/hostapd sysv and used a hostapd.service.
     It should not be needed if you keep trying. But, If you cant get yours to working bridging after the methods suggested, heres the hostapd.service to replace the sysv one.
